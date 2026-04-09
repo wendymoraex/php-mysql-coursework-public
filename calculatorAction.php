@@ -1,9 +1,3 @@
-<!--
-
-	P.47
-	File name: session2.php
--->
-
 <?php	session_start();	?>
 
 <CENTER>
