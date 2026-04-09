@@ -1,9 +1,5 @@
 <!--
-	File name:
-	Assigment:
-	Due:
-	Author:
-	Goal:
+	Goal: Calculate area of a circle
 -->
 
 <center>
