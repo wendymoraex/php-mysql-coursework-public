@@ -1,20 +1,15 @@
-
 <center>
 <FONT color=purple>
 <H2>Evaluation Table</H2>
 </FONT>
 <HR>
 <?php
-        $host = 'localhost';
-        $user = 'wmoraes';
-        $passwd = 'CS389';
-        $database = $user;
-
-        $connect = mysqli_connect($host, $user, $passwd);
+        require_once '../config.php';
+	
+	$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
         $query = "select * from EVALUATION";
-//      print "The query is <i> $query </i> ";
-        mysqli_select_db($connect, $database);
-        $result_id = mysqli_query($connect, $query);
+
+        $result_id = mysqli_query($conn, $query);
         if($result_id)
         {
                 print '<table border=1>';
@@ -30,6 +25,6 @@
         else
                 print "Fail.<p>";
 
-        mysqli_close($connect);
+        mysqli_close($conn);
 ?>
 </center>

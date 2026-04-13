@@ -13,16 +13,12 @@
 	$ID = $_POST['id'];
 	$newid = $_POST['newid'];
 
-	$host = 'localhost';
-	$user = "wmoraes";
-	$passwd = "CS389";
-	$database = "wmoraes";
-
-	$connect = mysqli_connect($host, $user, $passwd, $database);
+	require_once '../config.php';
+	
+	$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 	$query = "update STUDENT set ID=$newid where ID=$ID";
-	print "The query is <i> $query </i> ";
 
-	$result_id = mysqli_query($connect, $query);
+	$result_id = mysqli_query($conn, $query);
 
 	if($result_id)
 	{		
@@ -30,7 +26,7 @@
 	}
 	else
 		print "Fail.<p>";
-	mysqli_close($connect);
+	mysqli_close($conn);
 
 	include ("display.php");
 ?>

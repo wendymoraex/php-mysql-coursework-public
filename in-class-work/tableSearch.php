@@ -4,16 +4,13 @@
 
 	$gender = $_POST['gender'];
 
-	$host = 'localhost';
-	$user = 'wmoraes';
-	$passwd = 'CS389';
-	$database = 'wmoraes';
+	require_once '../config.php';
+	
+	$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-	$connect = mysqli_connect($host, $user, $passwd, $database);
 	$query = "select FIRSTNAME, LASTNAME from STUDENT where GENDER='$gender' ";
-	print "The query is <i> $query </i> ";
 
-	$result_id = mysqli_query($connect, $query);
+	$result_id = mysqli_query($conn, $query);
 
 	if($result_id)
 	{
@@ -28,6 +25,6 @@
 	}
 	else
 		print "Fail.<p>";
-	mysqli_close($connect);
+	mysqli_close($conn);
 ?>
 </CENTER>
