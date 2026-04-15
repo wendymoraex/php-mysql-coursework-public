@@ -11,7 +11,7 @@
 	$gender = $_SESSION['stuGender'];
 	$status = $_SESSION['stuStatus'];
 	$_SESSION['csOption'] = $_POST['cs'] ?? [];
-	 $_SESSION['mathOption'] = $_POST['math'] ?? [];
+	$_SESSION['mathOption'] = $_POST['math'] ?? [];
 ?>
 <center>
 <font color=purple>
