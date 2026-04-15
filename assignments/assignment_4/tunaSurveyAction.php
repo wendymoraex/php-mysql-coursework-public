@@ -17,7 +17,7 @@
 	$service = $_POST['service'];
 
 	$menu = array("Tuna Casserole", "Tuna Sandwich", "Tuna bites", "Grilled Tuna", "Tuna Surprise");
-        $service_options = array("The marvelous food", "The affordable prices", "The speedy service", "I just like tuna", "None of the above");
+    $service_options = array("The marvelous food", "The affordable prices", "The speedy service", "I just like tuna", "None of the above");
 
 	if(count($prefer) == 0)
     		print "Please, select a dish.<br>";
