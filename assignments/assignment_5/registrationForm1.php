@@ -8,13 +8,13 @@
 
 <?php session_start();
 
-        $_SESSION['stuName'] = $_POST['name'];
-        $_SESSION['stuGender'] = $_POST['g1'];
+	$_SESSION['stuName'] = $_POST['name'];
+    $_SESSION['stuGender'] = $_POST['g1'];
 	$_SESSION['stuStatus'] = $_POST['status'];
 
 	$name = $_SESSION['stuName'];
-        $gender = $_SESSION['stuGender'];
-        $status = $_SESSION['stuStatus'];
+    $gender = $_SESSION['stuGender'];
+    $status = $_SESSION['stuStatus'];
 
 ?>
 <center>
