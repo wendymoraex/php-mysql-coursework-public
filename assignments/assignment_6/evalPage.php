@@ -33,10 +33,10 @@ Choose a course to evaluate:
         <option> CS 212 </option>
         <option> CS 311 </option>
         <option> CS 310 </option>
-	<option> CS 389 </option>
-	<option> CS 489 </option>
-	<option> MATH 205 </option>
-	<option> MATH 171 </option>
+	    <option> CS 389 </option>
+	    <option> CS 489 </option>
+	    <option> MATH 205 </option>
+	    <option> MATH 171 </option>
 </select>
 </p>
 
