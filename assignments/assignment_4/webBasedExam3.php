@@ -10,7 +10,7 @@
 
 	$pass = $_SESSION['pwd'];
 
-	 $_SESSION['pwd'] = $pass;
+	$_SESSION['pwd'] = $pass;
         if($pass != "password")
                 print "<CENTER>Incorrect password. Try again!</CENTER><BR>";
         else
